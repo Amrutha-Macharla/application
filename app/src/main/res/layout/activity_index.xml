@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logoimg"
+        android:layout_width="600dp"
+        android:layout_height="350dp"
+        android:src="@drawable/nmm" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoimg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:height="30dp"
+        android:text="Hello Hooman !!"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text1"
+        android:layout_centerHorizontal="true"
+        android:height="30dp"
+        android:text="Thank You For Registering !!"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text2"
+        android:layout_centerHorizontal="true"
+        android:height="30dp"
+        android:text="We virtually Welcome you to AMRUTHA JEWELLERS"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="249dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text3"
+        android:layout_centerHorizontal="true"
+        android:height="30dp"
+        android:text="Please select your item type to proceed"
+        android:textColor="@color/white" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/repairs"
+        android:layout_width="108dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/text4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="151dp"
+        android:backgroundTint="@color/magicmint"
+        android:text="REPAIRS"
+        android:textColor="@color/black"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <Button
+        android:layout_height="60dp"
+        android:id="@+id/newitem"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/repairs"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="147dp"
+        android:backgroundTint="@color/magicmint"
+        android:fontFamily="@font/roboto_medium"
+        android:text="NEW ITEMS"
+        android:textColor="@color/black"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+</RelativeLayout>
